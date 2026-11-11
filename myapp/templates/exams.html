@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Examinations{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Academic records</p>
+        <h1>Examinations &amp; Results</h1>
+    </div>
+    <button class="primary-btn" type="button">Publish results</button>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card"><div class="metric-top"><span>Average score</span><span class="metric-trend up">+6.8%</span></div><h2 data-target="78">0</h2><p>School average</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Distinction</span><span class="metric-trend up">123</span></div><h2 data-target="123">0</h2><p>Top grades</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Pass rate</span><span class="metric-trend up">91%</span></div><h2 data-target="91">0</h2><p>Below previous term</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Re-sits</span><span class="metric-trend down">18</span></div><h2 data-target="18">0</h2><p>Required support</p></article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Results</p>
+            <h3>Grade summary by subject</h3>
+        </div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Class average</th>
+                <th>Excellent</th>
+                <th>Pass rate</th>
+                <th>Teacher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>84%</td>
+                <td>27</td>
+                <td>96%</td>
+                <td>Mr. Tom S.</td>
+            </tr>
+            <tr>
+                <td>Biology</td>
+                <td>80%</td>
+                <td>22</td>
+                <td>93%</td>
+                <td>Mrs. S. Saro</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>79%</td>
+                <td>19</td>
+                <td>92%</td>
+                <td>Ms. N. Wako</td>
+            </tr>
+            <tr>
+                <td>Economics</td>
+                <td>76%</td>
+                <td>15</td>
+                <td>89%</td>
+                <td>Mr. D. Kaia</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

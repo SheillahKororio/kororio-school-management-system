@@ -1,0 +1,25 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+myvenv/
+venv/
+env/
+
+# Django database
+db.sqlite3
+
+# Environment variables and secrets
+.env
+
+# VS Code settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Test and coverage files
+.coverage
+htmlcov/

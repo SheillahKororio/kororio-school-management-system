@@ -1,0 +1,55 @@
+/* General page styling */
+body {
+    background-color: rgb(230, 211, 224);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: rgb(139, 0, 76);
+    font-size: 35px;
+}
+
+/* Paragraph */
+p {
+    color: black;
+    font-size: 18px;
+}
+
+/* Navigation links */
+a {
+    color: white;
+    background-color: darkblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+a:hover {
+    background-color: orange;
+}
+
+/* Computer image */
+img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}

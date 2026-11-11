@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Attendance{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Monitoring</p>
+        <h1>Attendance</h1>
+    </div>
+    <button class="primary-btn" type="button">Mark attendance</button>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card"><div class="metric-top"><span>Today</span><span class="metric-trend up">94%</span></div><h2 data-target="94">0</h2><p>Student attendance</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Staff</span><span class="metric-trend up">96%</span></div><h2 data-target="96">0</h2><p>Staff presence</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Late arrivals</span><span class="metric-trend down">12</span></div><h2 data-target="12">0</h2><p>Reported today</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Excused absences</span><span class="metric-trend up">18</span></div><h2 data-target="18">0</h2><p>Verified reasons</p></article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Daily summary</p>
+            <h3>Weekly attendance overview</h3>
+        </div>
+    </div>
+
+    <div class="calendar-grid">
+        <div><span>Mon</span><strong>96%</strong></div>
+        <div><span>Tue</span><strong>95%</strong></div>
+        <div><span>Wed</span><strong>94%</strong></div>
+        <div><span>Thu</span><strong>92%</strong></div>
+        <div><span>Fri</span><strong>97%</strong></div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Late</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Form 1A</td>
+                <td>48</td>
+                <td>4</td>
+                <td>3</td>
+                <td>92%</td>
+            </tr>
+            <tr>
+                <td>Form 2C</td>
+                <td>44</td>
+                <td>5</td>
+                <td>2</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Form 3B</td>
+                <td>46</td>
+                <td>1</td>
+                <td>1</td>
+                <td>98%</td>
+            </tr>
+            <tr>
+                <td>Form 4A</td>
+                <td>43</td>
+                <td>2</td>
+                <td>1</td>
+                <td>95%</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

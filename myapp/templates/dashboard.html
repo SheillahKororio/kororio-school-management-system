@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Dashboard{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Overview</p>
+        <h1>School dashboard</h1>
+    </div>
+    <div class="header-meta">
+        <span class="status-badge success">Term 3 in progress</span>
+        <span class="date-pill" id="todayDate">Loading date...</span>
+    </div>
+</section>
+
+<section class="stats-grid">
+    <article class="metric-card highlight">
+        <div class="metric-top">
+            <span>Total students</span>
+            <span class="metric-trend up">+8.4%</span>
+        </div>
+        <h2 data-target="1480">0</h2>
+        <p>Across 28 classes</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Teachers &amp; staff</span>
+            <span class="metric-trend up">+3.1%</span>
+        </div>
+        <h2 data-target="164">0</h2>
+        <p>60 teaching staff</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Attendance rate</span>
+            <span class="metric-trend up">+1.7%</span>
+        </div>
+        <h2 data-target="94">0</h2>
+        <p>Average daily attendance</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Fees collected</span>
+            <span class="metric-trend up">+12.2%</span>
+        </div>
+        <h2 data-target="283000">0</h2>
+        <p>K 283,000 this term</p>
+    </article>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel chart-panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Performance</p>
+                <h3>Term 2 academic progress</h3>
+            </div>
+            <button class="ghost-btn" type="button">View details</button>
+        </div>
+
+        <div class="bar-chart" aria-label="Annual performance chart">
+            <div class="bar-group"><span class="bar-label">Jan</span><span class="bar-fill" data-width="55%"></span></div>
+            <div class="bar-group"><span class="bar-label">Feb</span><span class="bar-fill" data-width="68%"></span></div>
+            <div class="bar-group"><span class="bar-label">Mar</span><span class="bar-fill" data-width="72%"></span></div>
+            <div class="bar-group"><span class="bar-label">Apr</span><span class="bar-fill" data-width="81%"></span></div>
+            <div class="bar-group"><span class="bar-label">May</span><span class="bar-fill" data-width="76%"></span></div>
+            <div class="bar-group"><span class="bar-label">Jun</span><span class="bar-fill" data-width="89%"></span></div>
+        </div>
+    </article>
+
+    <article class="panel donut-panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Distribution</p>
+                <h3>Student demographics</h3>
+            </div>
+        </div>
+        <div class="donut-wrap">
+            <div class="donut-chart"><span>68%</span></div>
+            <ul class="legend-list">
+                <li><span class="dot primary"></span> Male 52%</li>
+                <li><span class="dot secondary"></span> Female 48%</li>
+                <li><span class="dot neutral"></span> Boarding 31%</li>
+            </ul>
+        </div>
+    </article>
+</section>
+
+<section class="content-grid two-col bottom-grid">
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Students</p>
+                <h3>Top performing classes</h3>
+            </div>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Average</th>
+                    <th>Pass rate</th>
+                    <th>Trend</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Form 4A</td>
+                    <td>82%</td>
+                    <td>96%</td>
+                    <td><span class="trend up">▲ 7.2</span></td>
+                </tr>
+                <tr>
+                    <td>Form 3B</td>
+                    <td>79%</td>
+                    <td>91%</td>
+                    <td><span class="trend up">▲ 5.1</span></td>
+                </tr>
+                <tr>
+                    <td>Form 2C</td>
+                    <td>75%</td>
+                    <td>88%</td>
+                    <td><span class="trend up">▲ 4.4</span></td>
+                </tr>
+                <tr>
+                    <td>Form 1D</td>
+                    <td>71%</td>
+                    <td>84%</td>
+                    <td><span class="trend up">▲ 3.9</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Activity</p>
+                <h3>Recent updates</h3>
+            </div>
+        </div>
+
+        <ul class="activity-list">
+            <li>
+                <span class="timeline-dot success"></span>
+                <div>
+                    <strong>Exam timetable published</strong>
+                    <small>2 hours ago</small>
+                </div>
+            </li>
+            <li>
+                <span class="timeline-dot warning"></span>
+                <div>
+                    <strong>Fees reminder sent to 48 parents</strong>
+                    <small>Today</small>
+                </div>
+            </li>
+            <li>
+                <span class="timeline-dot primary"></span>
+                <div>
+                    <strong>Science club trip approved</strong>
+                    <small>Yesterday</small>
+                </div>
+            </li>
+            <li>
+                <span class="timeline-dot neutral"></span>
+                <div>
+                    <strong>Staff attendance reviewed</strong>
+                    <small>3 days ago</small>
+                </div>
+            </li>
+        </ul>
+    </article>
+</section>
+{% endblock %}

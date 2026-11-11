@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Kororio Secondary School{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Reach us</p>
+        <h1>Contact us</h1>
+    </div>
+    <button class="primary-btn" type="button">Send message</button>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Message</p>
+                <h3>Send an enquiry</h3>
+            </div>
+        </div>
+        <form class="settings-form">
+            <div class="field-group">
+                <label>Your name</label>
+                <input type="text" value="Parent / Guardian" />
+            </div>
+            <div class="field-group">
+                <label>Email address</label>
+                <input type="email" value="guardian@example.com" />
+            </div>
+            <div class="field-group">
+                <label>Message</label>
+                <textarea rows="5">I would like to know more about admission and student support services.</textarea>
+            </div>
+            <button type="button" class="primary-btn">Submit</button>
+        </form>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">School contact</p>
+                <h3>Get in touch</h3>
+            </div>
+        </div>
+        <div class="toggle-list">
+            <div class="toggle-item"><span>Phone</span><span>+254 719677928</span></div>
+            <div class="toggle-item"><span>Email</span><span>kororio@sch.org</span></div>
+            <div class="toggle-item"><span>Address</span><span>Elgon, Chepyuk</span></div>
+            <div class="toggle-item"><span>Office hours</span><span>Mon - Fri, 8:00 AM - 4:00 PM</span></div>
+        </div>
+    </article>
+</section>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Fees Management{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Finance</p>
+        <h1>Fees Management</h1>
+    </div>
+    <button class="primary-btn" type="button">Record payment</button>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card"><div class="metric-top"><span>Collected</span><span class="metric-trend up">K 283k</span></div><h2 data-target="283000">0</h2><p>Current term</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Outstanding</span><span class="metric-trend down">K 56k</span></div><h2 data-target="56000">0</h2><p>Balances due</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Payments</span><span class="metric-trend up">426</span></div><h2 data-target="426">0</h2><p>Processed</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Late payments</span><span class="metric-trend down">31</span></div><h2 data-target="31">0</h2><p>Overdue</p></article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Fee ledger</p>
+            <h3>Recent payment records</h3>
+        </div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Class</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>H. Laki</td>
+                <td>Form 3B</td>
+                <td>Ksh 1,250</td>
+                <td><span class="status-chip success">Paid</span></td>
+                <td>12 Aug 2026</td>
+            </tr>
+            <tr>
+                <td>N. Boro</td>
+                <td>Form 2C</td>
+                <td>Ksh 1,450</td>
+                <td><span class="status-chip success">Paid</span></td>
+                <td>10 Aug 2026</td>
+            </tr>
+            <tr>
+                <td>R. Wera</td>
+                <td>Form 4A</td>
+                <td>Ksh 2,100</td>
+                <td><span class="status-chip warning">Partial</span></td>
+                <td>09 Aug 2026</td>
+            </tr>
+            <tr>
+                <td>J. Airo</td>
+                <td>Form 1D</td>
+                <td>Ksh 1,600</td>
+                <td><span class="status-chip neutral">Overdue</span></td>
+                <td>04 Aug 2026</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

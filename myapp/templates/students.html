@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Students{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Student records</p>
+        <h1>Students</h1>
+    </div>
+    <button class="primary-btn" type="button">+ Add Student</button>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card"><div class="metric-top"><span>Enrollment</span><span class="metric-trend up">+6.5%</span></div><h2 data-target="1480">0</h2><p>Across all grades</p></article>
+    <article class="metric-card"><div class="metric-top"><span>New admissions</span><span class="metric-trend up">+21</span></div><h2 data-target="21">0</h2><p>Year-to-date</p></article>
+    <article class="metric-card"><div class="metric-top"><span>On track</span><span class="metric-trend up">+4.1%</span></div><h2 data-target="91">0</h2><p>Academic progression</p></article>
+    <article class="metric-card"><div class="metric-top"><span>At risk</span><span class="metric-trend down">-2.4%</span></div><h2 data-target="64">0</h2><p>Needs intervention</p></article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Directory</p>
+            <h3>Student management</h3>
+        </div>
+        <div class="filter-group">
+            <button class="ghost-btn" type="button">Filter</button>
+            <button class="ghost-btn" type="button">Export</button>
+        </div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Admission no.</th>
+                <th>Class</th>
+                <th>Attendance</th>
+                <th>Average</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small">TA</span> <div><strong>Talia A.</strong><small>Form 4A</small></div></div></td>
+                <td>KS-2024-104</td>
+                <td>Form 4A</td>
+                <td>96%</td>
+                <td>87%</td>
+                <td><span class="status-chip success">Good</span></td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small alt">JD</span> <div><strong>Jesse D.</strong><small>Form 3B</small></div></div></td>
+                <td>KS-2024-118</td>
+                <td>Form 3B</td>
+                <td>92%</td>
+                <td>81%</td>
+                <td><span class="status-chip warning">Monitor</span></td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small soft">KM</span> <div><strong>Keren M.</strong><small>Form 2C</small></div></div></td>
+                <td>KS-2024-087</td>
+                <td>Form 2C</td>
+                <td>94%</td>
+                <td>83%</td>
+                <td><span class="status-chip success">Good</span></td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small warm">LP</span> <div><strong>Liam P.</strong><small>Form 1D</small></div></div></td>
+                <td>KS-2024-061</td>
+                <td>Form 1D</td>
+                <td>89%</td>
+                <td>74%</td>
+                <td><span class="status-chip neutral">Review</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

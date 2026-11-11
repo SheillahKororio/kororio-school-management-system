@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}About Kororio Secondary School{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Our story</p>
+        <h1>About Kororio Secondary School</h1>
+    </div>
+    <button class="primary-btn" type="button">View administration</button>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Mission</p>
+                <h3>Academic excellence with care</h3>
+            </div>
+        </div>
+        <p style="margin-top:18px; color: var(--muted); line-height:1.8;">
+            Kororio Secondary School exists to provide a safe, inclusive and academically strong learning environment for every student. We promote excellence in teaching, accountability, discipline, and community participation.
+        </p>
+        <ul class="check-list">
+            <li><span class="timeline-dot success"></span><div><strong>Quality learning</strong><small>Project-based and student-centered instruction.</small></div></li>
+            <li><span class="timeline-dot primary"></span><div><strong>Student support</strong><small>Wellness, counseling, and mentoring programs.</small></div></li>
+            <li><span class="timeline-dot warning"></span><div><strong>School values</strong><small>Respect, responsibility, integrity, and discipline.</small></div></li>
+        </ul>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Highlights</p>
+                <h3>School strengths</h3>
+            </div>
+        </div>
+        <div class="toggle-list">
+            <div class="toggle-item"><span>STEM leadership</span><span>High</span></div>
+            <div class="toggle-item"><span>Boarding support</span><span>Available</span></div>
+            <div class="toggle-item"><span>Pastoral care</span><span>Active</span></div>
+            <div class="toggle-item"><span>Community links</span><span>Strong</span></div>
+        </div>
+    </article>
+</section>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Reports{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Insights</p>
+        <h1>Reports</h1>
+    </div>
+    <button class="primary-btn" type="button">Generate report</button>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card"><div class="metric-top"><span>Pass rate</span><span class="metric-trend up">89%</span></div><h2 data-target="89">0</h2><p>Overall this year</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Retention</span><span class="metric-trend up">96%</span></div><h2 data-target="96">0</h2><p>Student continuation</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Attendance</span><span class="metric-trend up">94%</span></div><h2 data-target="94">0</h2><p>Average monthly</p></article>
+    <article class="metric-card"><div class="metric-top"><span>Risk alerts</span><span class="metric-trend down">07</span></div><h2 data-target="7">0</h2><p>Needs attention</p></article>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Performance</p>
+                <h3>Quarterly trend</h3>
+            </div>
+        </div>
+        <div class="bar-chart vertical">
+            <div class="bar-group"><span class="bar-label">Q1</span><span class="bar-fill" data-width="62%"></span></div>
+            <div class="bar-group"><span class="bar-label">Q2</span><span class="bar-fill" data-width="74%"></span></div>
+            <div class="bar-group"><span class="bar-label">Q3</span><span class="bar-fill" data-width="81%"></span></div>
+            <div class="bar-group"><span class="bar-label">Q4</span><span class="bar-fill" data-width="89%"></span></div>
+        </div>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Summary</p>
+                <h3>Key highlights</h3>
+            </div>
+        </div>
+        <ul class="check-list">
+            <li>Student attendance increased by 3.2% compared with the last term.</li>
+            <li>Fee collection exceeded target by K 26,000 and remains on track.</li>
+            <li>STEM performance improved with higher pass rates in maths and biology.</li>
+            <li>Administrative workload remains balanced across departments.</li>
+        </ul>
+    </article>
+</section>
+{% endblock %}

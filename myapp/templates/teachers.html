@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Teachers & Staff{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Workforce</p>
+        <h1>Teachers &amp; Staff</h1>
+    </div>
+    <button class="primary-btn" type="button">+ Add Staff</button>
+</section>
+
+<section class="cards-grid staff-grid">
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Academic staff</span><span class="metric-trend up">102</span></div>
+        <p>Teaching staff engaged in core subjects.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Support staff</span><span class="metric-trend up">38</span></div>
+        <p>Administration, boarding, and maintenance team.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Vacancies</span><span class="metric-trend down">04</span></div>
+        <p>Positions currently under review.</p>
+    </article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Staff directory</p>
+            <h3>Teaching and support roster</h3>
+        </div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Staff member</th>
+                <th>Role</th>
+                <th>Department</th>
+                <th>Contact</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small">MR</span> <div><strong>Mary R.</strong><small>Head of science</small></div></div></td>
+                <td>Teacher</td>
+                <td>Science</td>
+                <td>+254 700 1122</td>
+                <td>98%</td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small alt">ST</span> <div><strong>Sam T.</strong><small>Mathematics</small></div></div></td>
+                <td>Teacher</td>
+                <td>Mathematics</td>
+                <td>+254 719677928</td>
+                <td>96%</td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small soft">PN</span> <div><strong>Paul N.</strong><small>Accounts</small></div></div></td>
+                <td>Finance officer</td>
+                <td>Accounts</td>
+                <td>+254 700 2254</td>
+                <td>94%</td>
+            </tr>
+            <tr>
+                <td><div class="person-cell"><span class="avatar small warm">ES</span> <div><strong>Esther S.</strong><small>Housemaster</small></div></div></td>
+                <td>Boarding lead</td>
+                <td>Student welfare</td>
+                <td>+254 700 7750</td>
+                <td>97%</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

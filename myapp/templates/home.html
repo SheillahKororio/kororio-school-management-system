@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Home{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Welcome</p>
+        <h1>Kororio Secondary School</h1>
+    </div>
+    <a class="primary-btn" href="{% url 'dashboard' %}">Open dashboard</a>
+</section>
+
+<section class="stats-grid compact">
+    <article class="metric-card highlight">
+        <div class="metric-top">
+            <span>Enrollment</span>
+            <span class="metric-trend up">▲ 8.4%</span>
+        </div>
+        <h2 data-target="1482">0</h2>
+        <p>Students this term</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Academic results</span>
+            <span class="metric-trend up">▲ 6.8%</span>
+        </div>
+        <h2 data-target="78">0</h2>
+        <p>Average pass score</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Staff strength</span>
+            <span class="metric-trend up">▲ 3.1%</span>
+        </div>
+        <h2 data-target="164">0</h2>
+        <p>Dedicated professionals</p>
+    </article>
+    <article class="metric-card">
+        <div class="metric-top">
+            <span>Fees paid</span>
+            <span class="metric-trend up">▲ 12.2%</span>
+        </div>
+        <h2 data-target="283000">0</h2>
+        <p>Collected this term</p>
+    </article>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">School overview</p>
+                <h3>Learning with purpose</h3>
+            </div>
+        </div>
+        <p style="margin-top:18px; color: var(--muted); line-height:1.8;">
+            Kororio Secondary School is committed to nurturing confident, disciplined, and future-ready learners through strong academics, student support, and a vibrant school culture.
+        </p>
+        <ul class="check-list">
+            <li><span class="timeline-dot success"></span><div><strong>Strong academic focus</strong><small>High-performing classrooms and guided teaching plans.</small></div></li>
+            <li><span class="timeline-dot primary"></span><div><strong>Student welfare</strong><small>Monitoring, attendance support, and mentoring services.</small></div></li>
+            <li><span class="timeline-dot warning"></span><div><strong>Community engagement</strong><small>Parent updates, school events, and partnership programs.</small></div></li>
+        </ul>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Quick links</p>
+                <h3>School portal</h3>
+            </div>
+        </div>
+        <div class="toggle-list">
+            <a class="toggle-item" href="{% url 'students' %}"><span>Students</span><span>→</span></a>
+            <a class="toggle-item" href="{% url 'teachers' %}"><span>Teachers &amp; staff</span><span>→</span></a>
+            <a class="toggle-item" href="{% url 'exams' %}"><span>Examinations</span><span>→</span></a>
+            <a class="toggle-item" href="{% url 'fees' %}"><span>Fees management</span><span>→</span></a>
+        </div>
+    </article>
+</section>
+{% endblock %}

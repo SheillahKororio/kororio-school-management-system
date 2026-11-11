@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kororio Secondary School{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body data-page="{{ page_name }}">
+    <header class="site-header">
+        <div class="site-header__inner">
+            <div class="brand-group">
+                <div class="brand-badge">K</div>
+                <div>
+                    <p class="eyebrow light">Academic Excellence</p>
+                    <h1>Kororio Secondary School</h1>
+                </div>
+            </div>
+
+            <nav class="top-nav" aria-label="Quick links">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'students' %}">Students</a>
+                <a href="{% url 'teachers' %}">Staff</a>
+                <a href="{% url 'exams' %}">Results</a>
+                <a href="{% url 'reports' %}">Reports</a>
+            </nav>
+
+            <div class="header-actions">
+                <span class="cta-pill">Admissions Open</span>
+                <button class="primary-btn" type="button">Contact School</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-block">
+                <div class="brand-mark">K</div>
+                <div>
+                    <p class="eyebrow">School portal</p>
+                    <h2>Kororio Sec Sch</h2>
+                </div>
+            </div>
+
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a class="nav-link" data-page="dashboard" href="{% url 'dashboard' %}"><span>◫</span> Dashboard</a>
+                <a class="nav-link" data-page="students" href="{% url 'students' %}"><span>◎</span> Students</a>
+                <a class="nav-link" data-page="teachers" href="{% url 'teachers' %}"><span>◌</span> Teachers &amp; Staff</a>
+                <a class="nav-link" data-page="classes" href="{% url 'classes' %}"><span>▣</span> Classes &amp; Subjects</a>
+                <a class="nav-link" data-page="attendance" href="{% url 'attendance' %}"><span>◍</span> Attendance</a>
+                <a class="nav-link" data-page="exams" href="{% url 'exams' %}"><span>✓</span> Examinations</a>
+                <a class="nav-link" data-page="fees" href="{% url 'fees' %}"><span>▤</span> Fees Management</a>
+                <a class="nav-link" data-page="reports" href="{% url 'reports' %}"><span>◔</span> Reports</a>
+                <a class="nav-link" data-page="settings" href="{% url 'settings' %}"><span>⚙</span> Settings</a>
+            </nav>
+
+            <div class="sidebar-card">
+                <p class="small-label">Current term</p>
+                <h3>Term 3</h3>
+                <p>Academic cycle: Aug - Nov 2026</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div class="search-wrap">
+                    <span>⌕</span>
+                    <input type="text" placeholder="Search students, staff or reports" aria-label="Search" />
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="secondary-btn" type="button">+ New Record</button>
+                    <button class="icon-btn" type="button" aria-label="Notifications">🔔</button>
+                    <div class="user-box">
+                        <div class="avatar">SC</div>
+                        <div>
+                            <strong>Principal Sheila. Koro</strong>
+                            <small>Administration</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="footer-brand">
+                <div class="brand-badge small">K</div>
+                <div>
+                    <strong>Kororio Secondary School</strong>
+                    <small>Empowering learners for a brighter future</small>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Explore</h4>
+                    <a href="{% url 'dashboard' %}">Dashboard</a>
+                    <a href="{% url 'students' %}">Students</a>
+                    <a href="{% url 'reports' %}">Reports</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <span>P.O. Box 204, Kororio</span>
+                    <span>+255 719677928</span>
+                    <span>kororio@sch.org</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Kororio Secondary School. All rights reserved.</div>
+    </footer>
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+</body>
+</html>

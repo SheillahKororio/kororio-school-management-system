@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kororio Secondary School{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <script defer src="{% static 'js/dashboard.js' %}"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <div class="brand-group">
+                <div class="brand-badge">K</div>
+                <div>
+                    <p class="eyebrow light">Academic Excellence</p>
+                    <h1>Kororio Secondary School</h1>
+                </div>
+            </div>
+
+            <nav class="top-nav" aria-label="Quick links">
+                <a href="{% url 'home' %}">Dashboard</a>
+                <a href="{% url 'students' %}">Students</a>
+                <a href="{% url 'teachers' %}">Staff</a>
+                <a href="{% url 'examinations' %}">Results</a>
+                <a href="{% url 'reports' %}">Reports</a>
+            </nav>
+
+            <div class="header-actions">
+                <span class="cta-pill">Admissions Open</span>
+                <button class="primary-btn" type="button">Contact School</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-block">
+                <div class="brand-mark">K</div>
+                <div>
+                    <p class="eyebrow accent">School Portal</p>
+                    <h2>Kororio Secondary School</h2>
+                </div>
+            </div>
+
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}"><span>⌂</span> Dashboard</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'students' %}active{% endif %}" href="{% url 'students' %}"><span>👥</span> Students</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'teachers' %}active{% endif %}" href="{% url 'teachers' %}"><span>👩‍🏫</span> Teachers & Staff</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'classes' %}active{% endif %}" href="{% url 'classes' %}"><span>📚</span> Classes & Subjects</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'attendance' %}active{% endif %}" href="{% url 'attendance' %}"><span>✅</span> Attendance</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'examinations' %}active{% endif %}" href="{% url 'examinations' %}"><span>📝</span> Exams & Results</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'fees' %}active{% endif %}" href="{% url 'fees' %}"><span>💰</span> Fees</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'reports' %}active{% endif %}" href="{% url 'reports' %}"><span>📊</span> Reports</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'settings' %}active{% endif %}" href="{% url 'settings' %}"><span>⚙</span> Settings</a>
+            </nav>
+
+            <div class="sidebar-card">
+                <p class="small-label">Academic Year</p>
+                <h3>2026</h3>
+                <p>School enrollment is trending upward with strong performance in sciences and commerce.</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <label class="search-wrap" aria-label="Search records">
+                    <span>⌕</span>
+                    <input type="search" placeholder="Search students, staff or reports..." data-search />
+                </label>
+
+                <div class="topbar-actions">
+                    <button class="secondary-btn" type="button">+ Add Record</button>
+                    <button class="icon-btn" type="button" aria-label="Notifications">🔔</button>
+                    <div class="user-box">
+                        <div class="avatar">SC</div>
+                        <div>
+                            <strong>Sheila C.</strong>
+                            <small>Principal</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            {% block page_header %}{% endblock %}
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="footer-brand">
+                <div class="brand-badge small">K</div>
+                <div>
+                    <strong>Kororio Secondary School</strong>
+                    <small>Empowering learners for a brighter future</small>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Explore</h4>
+                    <a href="{% url 'home' %}">Dashboard</a>
+                    <a href="{% url 'students' %}">Students</a>
+                    <a href="{% url 'reports' %}">Reports</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <span>P.O. Box 204, Kororio</span>
+                    <span>+255 734 220 991</span>
+                    <span>info@kororio.ac.tz</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Kororio Secondary School. All rights reserved.</div>
+    </footer>
+</body>
+</html>

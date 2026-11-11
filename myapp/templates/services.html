@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}School Services | Kororio Secondary School{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Support services</p>
+        <h1>School services</h1>
+    </div>
+    <button class="primary-btn" type="button">Schedule support</button>
+</section>
+
+<section class="cards-grid">
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Admissions</span><span class="status-chip success">Open</span></div>
+        <p>Application support, enrollment checks, and academic guidance for new families.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Counseling</span><span class="status-chip neutral">Weekly</span></div>
+        <p>Student wellbeing support, mentoring, and behavior guidance programs.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>ICT Lab</span><span class="status-chip success">Active</span></div>
+        <p>Digital literacy lessons, coding practice, and computer-based assessments.</p>
+    </article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Service overview</p>
+            <h3>How we support learners</h3>
+        </div>
+    </div>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Department</th>
+                <th>Availability</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Academic counseling</td>
+                <td>Student welfare</td>
+                <td>Monday to Friday</td>
+                <td>counselor@kororio.edu.pg</td>
+            </tr>
+            <tr>
+                <td>Fee support</td>
+                <td>Finance office</td>
+                <td>By appointment</td>
+                <td>finance@kororio.edu.pg</td>
+            </tr>
+            <tr>
+                <td>Library services</td>
+                <td>Library</td>
+                <td>8 AM - 4 PM</td>
+                <td>library@kororio.edu.pg</td>
+            </tr>
+            <tr>
+                <td>Boarding support</td>
+                <td>Administration</td>
+                <td>Daily</td>
+                <td>boarding@kororio.edu.pg</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

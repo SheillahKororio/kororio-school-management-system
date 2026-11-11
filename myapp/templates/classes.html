@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Classes & Subjects{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Academics</p>
+        <h1>Classes &amp; Subjects</h1>
+    </div>
+    <button class="primary-btn" type="button">+ New Class</button>
+</section>
+
+<section class="cards-grid class-grid">
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Forms 1-2</span><span class="metric-trend up">12 classes</span></div>
+        <p>Foundational literacy, numeracy, and life-skills instruction.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Forms 3-4</span><span class="metric-trend up">10 classes</span></div>
+        <p>Exam-focused learning with subject specialization and practical labs.</p>
+    </article>
+    <article class="mini-card">
+        <div class="mini-card-head"><span>Subjects</span><span class="metric-trend up">18 active</span></div>
+        <p>Integrated classroom and lab-based teaching across core disciplines.</p>
+    </article>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Timetable</p>
+            <h3>Class and subject allocation</h3>
+        </div>
+    </div>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Form teacher</th>
+                <th>Core subjects</th>
+                <th>Enrollments</th>
+                <th>Completion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Form 1A</td>
+                <td>Ms. K. Osei</td>
+                <td>English, Maths, Science</td>
+                <td>52</td>
+                <td>88%</td>
+            </tr>
+            <tr>
+                <td>Form 2C</td>
+                <td>Mr. B. Tana</td>
+                <td>Business, ICT, Biology</td>
+                <td>49</td>
+                <td>84%</td>
+            </tr>
+            <tr>
+                <td>Form 3B</td>
+                <td>Mrs. L. Miri</td>
+                <td>Maths, Chemistry, Literature</td>
+                <td>47</td>
+                <td>81%</td>
+            </tr>
+            <tr>
+                <td>Form 4A</td>
+                <td>Mr. D. Kaia</td>
+                <td>Physics, Economics, Geography</td>
+                <td>46</td>
+                <td>90%</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

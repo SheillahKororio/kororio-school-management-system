@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Kororio Secondary School | Settings{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div>
+        <p class="eyebrow accent">Configuration</p>
+        <h1>Settings</h1>
+    </div>
+    <button class="primary-btn" type="button">Save changes</button>
+</section>
+
+<section class="content-grid two-col">
+    <article class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">School profile</p>
+                <h3>Institution details</h3>
+            </div>
+        </div>
+
+        <form class="settings-form">
+            <div class="field-group">
+                <label>School name</label>
+                <input type="text" value="Kororio Secondary School" />
+            </div>
+            <div class="field-group">
+                <label>Contact email</label>
+                <input type="email" value="kororio@sch.org" />
+            </div>
+            <div class="field-group">
+                <label>Academic year</label>
+                <input type="text" value="2026" />
+            </div>
+            <div class="field-group">
+                <label>Address</label>
+                <textarea rows="3">Elgon, Chepyuk</textarea>
+            </div>
+        </form>
+    </article>
+
+    <article class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Preferences</p>
+                <h3>System controls</h3>
+            </div>
+        </div>
+
+        <div class="toggle-list">
+            <label class="toggle-item"><span>Automatic term reminders</span><input type="checkbox" checked /></label>
+            <label class="toggle-item"><span>Daily attendance notifications</span><input type="checkbox" checked /></label>
+            <label class="toggle-item"><span>Fee payment alerts</span><input type="checkbox" checked /></label>
+            <label class="toggle-item"><span>Monthly academic reports</span><input type="checkbox" /></label>
+        </div>
+    </article>
+</section>
+{% endblock %}
